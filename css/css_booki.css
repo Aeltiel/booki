@@ -1,47 +1,67 @@
-/* police de la page*/
+        /* police de la page*/
 @font-face {
     font-family: 'Raleway';
     src: url('./Raleway/Raleway-VariableFont_wght.ttf');
 }
 
-/*général*/
+        /*général*/
 *{
     box-sizing: border-box;
 }
 
 body{
     font-family: Raleway, Verdana, sans-serif;
-    padding-top: 5%;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-bottom: 0%;
 }
 
-/*Header / Menu*/
+a{
+    text-decoration: none;
+    color :black
+}
+a:visited{
+    color: black;
+}
+
+        /*Header / Menu*/
+
 header{
    width: 100%; 
    height: 30%;
-   margin: auto;
+   padding-left: 7%;
 }
 .Menu{
-display: flex;
-justify-content: space-between;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
 }
 
+.Menu img{
+    width: 130px;
+    height: 66px; 
+ }
+
+ nav{
+    width: 35% ;
+    height: 33%;
+ }
 ol{
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
 }
 
-li{
-padding: 15%;
+.MenuLi{
+    padding-left: 15%;
 }
-.Menu img{
-   width: 130px;
-   height: 66px; 
-}
-/* Header/ Recherches*/
+
+.MenuLi a:hover{
+    color: #0065FC;
+    border-top: 3px #0065FC solid;
+    }
+    
+
+
+        /* Header/ div Recherches*/
 .gras{
     font-size: 20px;
     font-weight: bold;
@@ -49,14 +69,180 @@ padding: 15%;
 
 }
 
-/*section général*/
+.barre{
+    width: 25%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
+}
+.iconeR{
+    width: 50px;
+    height: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+    .loca{
+        display: block;
+        margin-top: 10px;
+    }
+
+.Search{
+    width: 260px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+    .texteVille{
+        display: block;
+        width: 242px;
+        border: hidden;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+}
+
+.loupe{
+    width: 125px;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    display: flex;
+    justify-content: center;
+}
+
+    .button{
+        display: block;
+        width: 100px;
+        border: hidden;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+    }
+
+        /* header / div Filtres*/
+        /*J'ai utilisé le DRY pour mes filtres. Je l'utiliserai plus loin également*/
+.fa{
+    margin: auto;
+    color: #0065FC;
+}
+.Filtres{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.Aligne{
+    margin-top: 22px;
+    margin-right: 22px;
+}
+.ligne{
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fil {
+    box-sizing: content-box;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin-right: 22px;
+    display: flex;
+    justify-content: flex-start;
+    border: 2px #F2F2F2 solid;
+    border-radius: 20px;
+}
+.fil:hover{
+    background-color: #0065FC;
+    color: white;
+}
+
+    .fil-eco{
+        width: 150px;
+    }
+    .fil-fam{
+        width: 120px;
+    }
+    .fil-coeur{
+        width: 140px;
+    }
+.Boutton{
+    display: block;
+    width: 200px;
+    padding: 0;
+    border: hidden;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+.Boutton:hover{
+    background-color: #0065FC;
+    color: white;
+}
+    .Boutton-E{
+        margin-left: 20px;
+    }
+    .Boutton-F{
+        margin-left: 15px;
+    }
+    .Boutton-R{
+        margin-left: 20px;
+    }
+    .Boutton-A{
+        margin-left: 20px;
+    }
+
+.icones{
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 40px;
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    position: absolute;
+}
+
+        /*section général*/
 section{
     width: 100%;
     height: 60%;
     margin: auto;
+    padding-left: 7%;
 }
+.infos{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+.ic{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 9px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+    .fa-info{
+    padding-top: 7px;
+    color: #0065FC;
 
-.hebergements{
+}
+#hebergements{
     width: 100%;
     height: 60%;
     display: flex;
@@ -64,7 +250,7 @@ section{
 }
 
             /*article hébergement*/
-        /*hébergement ville*/
+            /*hébergement ville*/
 .Hebergements-ville{
 width: 65%;
 height: 100%;
@@ -111,8 +297,21 @@ h1{
     background-color: #F2F2F2;
     border-radius: 10px;   
 }
+.boite{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-star{
+    margin-top: 45px;
+    padding-right: 7%;
+}
 
-/* card général*/
+.CardesP{
+    display: flex;
+    align-content: space-around;
+    padding-left: 5%;
+}
+        /* card général*/
 .card{
     width: 30%;
     height: 100%;
@@ -150,5 +349,29 @@ img{
 }
 
 
-/*footer général*/
+        /*footer général*/
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+}
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    padding: 0;
+    margin-top: 10px;
+}
+.Apropos{
+    margin-left: 7%;
+    }
+
+.Noshebergements{
+    margin-left: 15%;
+}
+
+.Assistance{
+    margin-left: 15%;
+}
