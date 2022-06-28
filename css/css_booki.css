@@ -21,12 +21,14 @@ a:visited{
     color: black;
 }
 
+/* #region header */
         /*Header / Menu*/
 
 header{
    width: 100%; 
    height: 30%;
-   padding-left: 7%;
+   padding-left: 3%;
+   padding-right: 3%;
 }
 .Menu{
     width: 100%;
@@ -47,10 +49,11 @@ header{
 ol{
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .MenuLi{
+    padding-top: 2%;
     padding-left: 15%;
 }
 
@@ -62,6 +65,7 @@ ol{
 
 
         /* Header/ div Recherches*/
+/*texte*/
 .gras{
     font-size: 20px;
     font-weight: bold;
@@ -69,8 +73,9 @@ ol{
 
 }
 
+/*Barre de recherches-- début*/
 .barre{
-    width: 25%;
+    width: 23%;
     height: 10%;
     display: flex;
     justify-content: flex-start;
@@ -124,6 +129,7 @@ ol{
         color: white;
         font-weight: bold;
     }
+/*barre de recherches--Fin*/
 
         /* header / div Filtres*/
         /*J'ai utilisé le DRY pour mes filtres. Je l'utiliserai plus loin également*/
@@ -214,13 +220,16 @@ ol{
     border-radius: 25px;
     position: absolute;
 }
+/* #endregion header */
 
-        /*section général*/
+/* #region Section */ 
+        
+            /*section général*/
 section{
     width: 100%;
     height: 60%;
-    margin: auto;
-    padding-left: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .infos{
     font-size: 15px;
@@ -246,16 +255,16 @@ section{
     width: 100%;
     height: 60%;
     display: flex;
-    justify-content: space-between;
 }
 
             /*article hébergement*/
-            /*hébergement ville*/
+            /* placement des box lié à hébergement ville*/
 .Hebergements-ville{
 width: 65%;
 height: 100%;
 background-color: #F2F2F2;
 border-radius: 10px;
+margin-right: 20px;
 }
 
 h1{
@@ -265,20 +274,25 @@ h1{
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .link{
+    display: block;
     font-size: 15px;
     font-weight: bold;
     width: 65%;
     height: 10%;
     padding-left: 45px;
+    padding-bottom: 30px;
+    
 }
 
 .Cards{
     width: 95%;
     height: 60%;
     padding-left: 45px;
+    padding-bottom: 35px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -288,68 +302,287 @@ h1{
     height: 35%;
     display: flex;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
-        /*populaires*/
+        /* placement des box lié aux populaires*/
 .Populaires{
-    width: 30%;
+    width: 33%;
     height: 100%;
     background-color: #F2F2F2;
-    border-radius: 10px;   
+    border-radius: 10px; 
+    margin-left: 20px;  
 }
 .boite{
     display: flex;
     justify-content: space-between;
 }
-.fa-star{
-    margin-top: 45px;
-    padding-right: 7%;
+.starPop{
+    display: block;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.CardsP{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    padding: 30px;
 }
 
-.CardesP{
-    display: flex;
-    align-content: space-around;
-    padding-left: 5%;
-}
-        /* card général*/
+
+        /* configuration card général*/
 .card{
     width: 30%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 30px;
     font-size: 15px;
     text-align: justify;
     background-color: white;
-    padding: 5px;
+    padding: 10px;
  } 
+
+.card p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 2%;
+ }
+
+
 .card-image{
     width: 100%;
-    height: 70%;
-}
-img{
-    max-width: 100%;
-    max-height: 70% ;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin: auto;
+    height: 200px;
+    padding-bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    object-fit: cover;
 }
 
  .card-body{
     width: 100%;
     height: 30%;
+    padding-top: 0;
+    padding-bottom: 0;
+
  }
 
  .card-title{
     width: 100%;
-    height: 30%;
+    height: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
  }
 
 .card-price{
     width: 100%;
-    height: 30%;
+    height: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
+.card-stars{
+    width: 100%;
+    height: 10%;
+    padding: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
 
-        /*footer général*/
+.blue-stars{
+    display: block;
+    color: #0065FC;
+    display: flex;
+    justify-content: flex-start;
+}
+.grey-stars{
+    display: block;
+    color: #d9d9d9;
+    display: flex;
+}
+.fa-star{
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+    /*populaires*/
+    /*Spécificité lié aux cards "les plus populaires"*/
+
+.cardPop{
+    width:100% ;
+    height: 200px ;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.cardPop a{
+    display: flex;
+    width: 100%;
+    height: 180px;
+}
+
+.cardPop .card-image{
+    width: 200px;
+    height: 180px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+}
+
+.cardPop .card-body{
+    width: 250px;
+    height: 180px;
+    padding-left: 15px;
+}
+
+.cardPop .card-title{
+    width: 150px;
+    height: 70px;
+    padding-top: 5px;
+}
+
+.cardPop .card-price{
+    width: 150px;
+    height: 70px;
+}
+
+.cardPop .card-stars{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-self: flex-end; 
+    padding-left: 0;   
+}
+
+        /*Article Activités */
+
+#activites{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 40px;
+}
+
+.blocActivites{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+#activites h1{
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.vieuxPort{
+    width: 400px;
+    height: 500px;
+}
+.fortIles{
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calanques{
+    width: 400px;
+    height: 500px; 
+}
+
+.notreDameParc{
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+    /* Card activité*/
+.cardAct{
+    width: 400px;
+    height: 500px;
+    box-shadow: 10px 10px 15px #F2F2F2;
+    border-radius: 20px;
+}
+
+.cardAct .card-image{
+    width: 100%;
+    height: 440px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.cardAct .card-body{
+    width: 100%;
+    height: 43px;
+    padding-left: 20px;
+}
+
+        /*Card activité règles spécifiques*/
+
+#fort{
+    width: 400px;
+    height: 240px;
+}
+
+#fort .card-image{
+    width: 400px;
+    height: 180px;
+}
+#fort .card-body{
+    width: 400px;
+    height: 50px;
+}
+#iles{
+    width: 400px;
+    height: 215px;
+}
+
+#iles .card-image{
+    width: 400px;
+    height: 160px;
+}
+
+#iles .card-body{
+    width: 400px;
+    height: 30px;
+}
+
+#notreDame{
+    width: 400px;
+    height: 230px;
+}
+
+#notreDame .card-image{
+    width: 400px;
+    height: 160px;
+}
+
+#lonchamp{
+    width: 400px;
+    height: 230px; 
+}
+
+#lonchamp .card-image{
+    width: 400px;
+    height: 160px;
+}
+/* #endregion Section */
+        
+/* #region footer*/
+
+    /*footer général*/
 footer{
     background-color: #F2F2F2;
     display: flex;
@@ -375,3 +608,8 @@ li{
 .Assistance{
     margin-left: 15%;
 }
+/* #endregion footer*/
+
+/* #region Mediaqueries*/
+
+/* #endregion Medaqueries*/
