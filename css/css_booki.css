@@ -23,7 +23,6 @@ a:visited{
 }
 
 /* #region header */
-        /*Header / Menu*/
 
 header{
    width: 100%; 
@@ -51,89 +50,78 @@ ol{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    margin: 0;
+}
+
+.Menu a{
+    padding-top: 50px;
 }
 
 .MenuLi{
-    padding-top: 2%;
     padding-left: 15%;
+    margin: 0;
 }
 
 .MenuLi a:hover{
     color: #0065FC;
     border-top: 3px #0065FC solid;
     }
+    /* #endregion header */
     
-
-
-        /* Header/ div Recherches*/
-/*texte*/
-.gras{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0%;
-
-}
-
-/*Barre de recherches-- début*/
-.barre{
-    width: 23%;
-    height: 10%;
-    display: flex;
-    justify-content: flex-start;
-    border: 2px #F2F2F2 solid;
-    border-radius: 10px;
-}
-.iconeR{
-    width: 50px;
-    height: 40px;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: center;
-}
-    .loca{
-        display: block;
-        margin-top: 10px;
-    }
-
-.Search{
-    width: 260px;
-    height: 40px;
-    display: flex;
-    justify-content: flex-start;
-}
-    .texteVille{
-        display: block;
-        width: 242px;
-        border: hidden;
-        font-size: 15px;
+    /* #region Section Recherches */
+    /* div Recherches*/
+    /*texte*/
+    .gras{
+        font-size: 20px;
         font-weight: bold;
-        margin-left: 10px;
-}
-
-.loupe{
-    width: 125px;
-    height: 40px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #0065FC;
-    display: flex;
-    justify-content: center;
-}
-
-    .button{
-        display: block;
-        width: 100px;
+        margin-bottom: 0%;
+        
+    }
+    
+    /*Barre de recherches-- début*/
+    .barre{
+        width: 23%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        border: 2px #F2F2F2 solid;
+        border-radius: 10px;
+    }
+    .iconeR{
+        width: 50px;
+        height: 40px;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    
+    .Search{
+        width: 260px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
         border: hidden;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    
+    .loupe{
+        width: 125px;
+        height: 40px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: #0065FC;
         color: white;
-        font-weight: bold;
+        display: flex;
+        border: hidden;
+        justify-content: center;
     }
-/*barre de recherches--Fin*/
-
-        /* header / div Filtres*/
-        /*J'ai utilisé le DRY pour mes filtres. Je l'utiliserai plus loin également*/
+    
+    /*barre de recherches--Fin*/
+    
+    /* header / div Filtres*/
+    /*J'ai utilisé le DRY pour mes filtres.*/
 .fa{
     margin: auto;
     color: #0065FC;
@@ -183,49 +171,52 @@ ol{
     .fil-coeur{
         width: 140px;
     }
-.Boutton{
-    display: block;
-    width: 200px;
-    padding: 0;
-    border: hidden;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    border-radius: 20px;
-
-}
-.Boutton:hover{
-    background-color: #0065FC;
-    color: white;
-}
+    .Boutton{
+        display: block;
+        width: 200px;
+        padding: 0;
+        border: hidden;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border-radius: 20px;
+        
+    }
+    .Boutton:hover{
+        background-color: #0065FC;
+        color: white;
+    }
     .Boutton-E{
         margin-left: 20px;
+        padding-left: 3px;
     }
     .Boutton-F{
         margin-left: 15px;
+        padding-left: 3px;
     }
     .Boutton-R{
         margin-left: 20px;
+        padding-left: 8px;
     }
     .Boutton-A{
         margin-left: 20px;
     }
-
-.icones{
-    display: block;
-    display: flex;
-    justify-content: center;
-    width: 35px;
-    height: 40px;
-    background-color: #DEEBFF;
-    border-radius: 25px;
-    position: absolute;
-}
-/* #endregion header */
-
-/* #region Section */ 
-        
-            /*section général*/
+    
+    .icones{
+        display: block;
+        display: flex;
+        justify-content: center;
+        width: 35px;
+        height: 40px;
+        background-color: #DEEBFF;
+        border-radius: 25px;
+        position: absolute;
+    }
+    /* #endregion Section Recherches*/
+    
+    /* #region Section Hébergements */ 
+    
+    /* général*/
 section{
     width: 100%;
     height: 60%;
@@ -247,35 +238,35 @@ section{
     margin-top: 12px;
     margin-right: 10px;
 }
-    .fa-info{
+.fa-info{
     padding-top: 7px;
     color: #0065FC;
-
+    
 }
-#hebergements{
+.hebergements{
     width: 100%;
     height: 60%;
     display: flex;
 }
 
-            /*article hébergement*/
-            /* placement des box lié à hébergement ville*/
+/*article hébergement*/
+/* placement des box lié à hébergement ville*/
 .Hebergements-ville{
-width: 65%;
-height: 100%;
-background-color: #F2F2F2;
-border-radius: 10px;
-margin-right: 20px;
+    width: 65%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
-h1{
+#Hebergements h1{
     font-size: 20px;
     font-weight: bold;
     padding-top: 25px;
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 0px;
-    margin-bottom: 0;
+    margin : 0;
 }
 
 .link{
@@ -303,11 +294,11 @@ h1{
     height: 35%;
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 20px;
 }
 
 
-        /* placement des box lié aux populaires*/
+/* placement des box lié aux populaires*/
 .Populaires{
     width: 33%;
     height: 100%;
@@ -325,7 +316,6 @@ h1{
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 0px;
-    margin-top: 15px;
     margin-bottom: 0;
 }
 .CardsP{
@@ -338,7 +328,7 @@ h1{
 }
 
 
-        /* configuration card général*/
+/* configuration card général*/
 .card{
     width: 30%;
     height: 100%;
@@ -347,13 +337,13 @@ h1{
     text-align: justify;
     background-color: white;
     padding: 10px;
- } 
+} 
 
 .card p{
     margin-top: 1%;
     margin-bottom: 1%;
     padding-left: 2%;
- }
+}
 
 .card a{
     border-top-left-radius: 30px;
@@ -363,7 +353,7 @@ h1{
 }
 .card-image{
     width: 100%;
-    height: 200px;
+    height: 150px;
     padding-bottom: 0;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -374,21 +364,21 @@ h1{
     object-fit: cover;
 }
 
- .card-body{
+.card-body{
     width: 100%;
     height: 30%;
     padding-top: 0;
     padding-bottom: 0;
+    
+}
 
- }
-
- .card-title{
+.card-title{
     width: 100%;
     height: 10%;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
- }
+}
 
 .card-price{
     width: 100%;
@@ -423,39 +413,43 @@ h1{
     background-color: #0065FC;
 }
 
-.card a:hover{
-    background-color: white;
-    }
+.card:hover a{
+    background-color: #0065FC;
+    color: white;
+}
+.card:hover .blue-stars{
+    color: black;
+}
 
-    /*populaires*/
-    /*Spécificité lié aux cards "les plus populaires"*/
+/*populaires*/
+/*Spécificité lié aux cards "les plus populaires"*/
 
 .cardPop{
-    width:100% ;
-    height: 200px ;
+    width: 100% ;
+    height: 160px ;
     border-radius: 30px;
     font-size: 15px;
     text-align: justify;
     background-color: white;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .cardPop a{
     display: flex;
     width: 100%;
-    height: 180px;
+    height: 150px;
 }
 
 .cardPop .card-image{
     width: 200px;
-    height: 180px;
-    border-bottom-left-radius: 30px;
+    height: 140px;
+    border-bottom-left-radius: 20px;
     border-top-right-radius: 0;
 }
 
 .cardPop .card-body{
     width: 250px;
-    height: 180px;
+    height: 150px;
     padding-left: 15px;
 }
 
@@ -467,7 +461,7 @@ h1{
 
 .cardPop .card-price{
     width: 150px;
-    height: 70px;
+    height: 30px;
 }
 
 .cardPop .card-stars{
@@ -482,13 +476,22 @@ h1{
     box-shadow: 3px 3px 0 #0065FC;
     border: solid #0065FC;
 }
+/* #endregion Section Hébergments */
 
-        /*Article Activités */
+/* #region Section Activités */
 
-#activites{
+#Activités{
     width: 100%;
     height: 40%;
     margin-bottom: 40px;
+}
+#Activités h1{ 
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    margin : 0;
 }
 
 .blocActivites{
@@ -496,10 +499,6 @@ h1{
     height: 90%;
     display: flex;
     justify-content: space-between;
-}
-#activites h1{
-    padding-left: 0;
-    padding-bottom: 20px;
 }
 
 .vieuxPort{
@@ -604,7 +603,7 @@ h1{
     width: 400px;
     height: 160px;
 }
-/* #endregion Section */
+/* #endregion Section Activités */
         
 /* #region footer*/
 
@@ -624,36 +623,60 @@ li{
     margin-top: 10px;
 }
 .Apropos{
-    margin-left: 7%;
+    margin-left: 3%;
     }
 
 .Noshebergements{
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 .Assistance{
-    margin-left: 15%;
+    margin-left: 25%;
 }
 /* #endregion footer*/
 
 /* #region Mediaqueries*/
         /*Mediaqueries tablettes*/
-@media screen and (max-width : 992px){
-    body{
-        width: auto;
-        orientation: portrait;
-}
-    #hebergements{
-        width: 100%;
-        height: 60%;
+@media screen and (min-width : 768px) and (max-width : 992px){
+            /*Boite menu début */
+    .Menu{
+        flex-direction: column;
     }
-
-}
-
-@media screen and (max-width : 768px) {
+    .Menu p{
+        display: flex;
+        justify-content: center;
+    }
+    .Menu nav{
+        width: auto;
+        display: flex;
+        justify-content: center; 
+    }
+    .Menu ol{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .Menu li{
+        padding: 0;
+    }
+    .MenuLi a:hover{
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        }
+        /* Boite menu fin*/
     
+       /* Boite Recherches début */
+       
+       /* Boite Recherches fin*/
 }
+
 
         /*Mediaqueries Smartphone*/
-
+@media screen and (max-width : 768px) {
+            .Menu{
+                flex-direction: column;
+            }
+        }
 /* #endregion Medaqueries*/
