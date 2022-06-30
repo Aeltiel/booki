@@ -68,7 +68,7 @@ ol{
     }
     /* #endregion header */
     
-    /* #region Section Recherches */
+/* #region Section Recherches */
     /* div Recherches*/
     /*texte*/
     .gras{
@@ -113,9 +113,13 @@ ol{
         border-bottom-right-radius: 10px;
         background-color: #0065FC;
         color: white;
-        display: flex;
         border: hidden;
+        display: flex;
         justify-content: center;
+    }
+
+    .loupe2{
+        display: none;
     }
     
     /*barre de recherches--Fin*/
@@ -214,7 +218,7 @@ ol{
     }
     /* #endregion Section Recherches*/
     
-    /* #region Section Hébergements */ 
+/* #region Section Hébergements */ 
     
     /* général*/
 section{
@@ -259,7 +263,7 @@ section{
     margin-right: 20px;
 }
 
-#Hebergements h1{
+.hebergements h1{
     font-size: 20px;
     font-weight: bold;
     padding-top: 25px;
@@ -636,9 +640,9 @@ li{
 /* #endregion footer*/
 
 /* #region Mediaqueries*/
-        /*Mediaqueries tablettes*/
+        /* Mediaqueries tablettes*/
 @media screen and (min-width : 768px) and (max-width : 992px){
-            /*Boite menu début */
+    /*Boite menu */
     .Menu{
         flex-direction: column;
     }
@@ -656,27 +660,372 @@ li{
         display: flex;
         justify-content: space-between;
         padding: 0;
+        margin-right: 50px;
     }
     .Menu li{
         padding: 0;
+    }
+
+    .Menu a{
+        padding-bottom: 30px;
     }
     .MenuLi a:hover{
         color: #0065FC;
         border-top: none;
         border-bottom: 3px #0065FC solid;
         }
-        /* Boite menu fin*/
+    /* Boite menu fin*/
     
-       /* Boite Recherches début */
-       
-       /* Boite Recherches fin*/
+    /* Boite Recherches début */
+    .gras{
+        display: flex;
+        justify-content: center;
+ } 
+    .recherches p{
+        display: flex;
+        justify-content: center;
+    }
+    .barre{
+        width: 50%;
+        margin-left: 225px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .iconeR{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .Search{
+        width: 170px;
+    }
+    /* Boite Recherches fin*/
+
+    /* Boite Filtres début */
+    .Filtres{
+        margin-left: 100px;
+    }
+    /* Boite Filtres fin*/
+
+
+    /*Boites hebergements début */
+.hebergements{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 }
 
+    .Populaires{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .boite{
+        display: flex;
+        justify-content: center;
+    }
+
+    .CardsP{
+        width: 60%;
+        margin: auto;
+
+    }
+
+    .Hebergements-ville{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    /*Boites hebergements fin */
+
+    /*Boite Activités début */
+    .blocActivites{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vieuxPort{
+        margin-bottom: 20px;
+    }
+
+    .fortIles{
+        margin-bottom: 20px;
+    }
+    /*Boite Activités fin */
+}
 
         /*Mediaqueries Smartphone*/
 @media screen and (max-width : 768px) {
-            .Menu{
-                flex-direction: column;
-            }
+    /*Boite menu */
+    .Menu{
+        flex-direction: column;
+    }
+    .Menu p{
+        display: flex;
+        justify-content: center;
+        margin-left: 33px;
+    }
+    .Menu nav{
+        width: auto;
+    }
+    .Menu ol{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .Menu li{
+        padding: 0;
+    }
+
+    .Menu a{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .MenuLi a:hover{
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
         }
+    /* Boite menu fin*/
+    
+    /* Boite Recherches début */
+    .gras{
+        display: flex;
+        justify-content: center;
+ } 
+
+    .barre{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .iconeR{
+        width: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Search{
+        width: 250px;
+    }
+
+    .loupe{
+        display: none;
+    }
+
+    .loupe2{
+        width : 40px;
+        display: flex;
+        justify-content: center;
+        background-color: #0065FC;
+        color: white;
+        display: flex;
+        border: hidden;
+        padding-top: 12px;
+        border-radius: 10px;
+    }
+    /* Boite Recherches fin*/
+
+    /* Boite Filtres début */
+    .Filtres{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Aligne{
+        margin-bottom: 0;
+    }
+
+    .ligne{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fil{
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .fil-fam{
+        margin-left: 25px;
+    }
+    /* Boite Filtres fin*/
+
+
+    /*Boites hebergements début */
+.hebergements{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+    .Populaires{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .boite{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-top: 25px;
+    }
+
+    .boite h1{
+        padding: 0;
+    }
+
+    .boite .starPop{
+        padding-bottom: 25px;
+        padding-top: 0;
+    }
+
+    /* card début*/
+    .CardsP{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cardPop .card-image{
+        width: 140px;
+    }
+
+    .cardPop .card-body{
+        padding-left: 5px;
+    }
+
+    .Hebergements-ville{
+        width: auto;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    .Cards{
+        padding-top: 15px;
+        padding-left: 0;
+    }
+
+    .Card-box{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .card{
+        width: auto;
+        margin-bottom: 10px;
+        box-shadow: 7px 7px 10px #F2F2F2;
+    }
+    /* card fin*/
+    /*Boites hebergements fin */
+
+    /*Boite Activités début */
+    .blocActivites{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vieuxPort{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .fortIles{
+        width: 338px;
+        height: 420px;
+        margin-bottom: 20px;
+    }
+
+    .calanques{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .notreDameParc{
+        width: 338px;
+        height: 420px;
+    }
+
+    /* cardAct début*/
+    .cardAct{
+       width: auto;
+       height: 200px; 
+    }
+
+    .cardAct .card-image{
+      height: 150px;  
+    }
+
+    #fort{
+        width: 338px;
+        height: 200px;
+    }
+    #fort .cardAct{
+        width: 338px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #fort .card-image{
+        width: 330px;
+        height: 150px;
+    }
+
+    #iles{
+        width: 338px;
+        height: 200px;
+    }
+
+    #iles .card-image{
+        width: 330px;
+        height: 150px;
+    }
+
+    #notreDame{
+        width: 338px;
+        height: 200px; 
+    }
+
+    #notreDame .cardAct{
+        margin-bottom: 20px; 
+    }
+    #notreDame .card-image{
+        width: 330px;
+        height: 150px;
+    }
+
+    #lonchamp{
+        width: 338px;
+        height: 200px;
+    }
+
+    #lonchamp .cardAct{
+        width: 338px;
+        height: 200px;
+    }
+
+    #lonchamp .card-image{
+        width: 330px;
+        height: 150px;
+    }
+    /* cardAct fin*/
+    /*Boite Activités fin */
+
+    /*Boite footer début */
+    footer{
+        flex-direction: column;
+    }
+
+    .Noshebergements{
+        margin-left: 3%;
+    }
+
+    .Assistance{
+        margin-left: 3%;
+    }
+    /*Boite footer fin */
+}
 /* #endregion Medaqueries*/
