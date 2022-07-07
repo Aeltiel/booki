@@ -664,6 +664,18 @@ li{
 /* section recherches fin*/
 
 /* section hébergement début*/
+.Hebergements-ville{
+    width: 60%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.Populaires{
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+}
+
     /*  card hébergement marseille début*/
 .card{
     height: auto;
@@ -723,7 +735,6 @@ li{
 }
 /* section activités fin */
 }
-
 
         /* Mediaqueries tablettes*/
 @media screen and (max-width : 992px){
@@ -875,7 +886,7 @@ li{
     width: 60%;
 }
 
-.cardPop .card-title,{
+.cardPop .card-title{
     width: auto;
 }
     /* card pop fin */
