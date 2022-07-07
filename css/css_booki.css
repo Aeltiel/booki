@@ -12,16 +12,17 @@
 body{
     font-family: Raleway, Verdana, sans-serif;
 }
-
+    
 a{
     display: block;
     text-decoration: none;
     color :black
 }
+
 a:visited{
     color: black;
 }
-
+    
 /* #region header */
 
 header{
@@ -452,7 +453,7 @@ section{
 }
 
 .cardPop .card-image{
-    width: 200px;
+    width: 40%;
     height: 140px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0;
@@ -647,8 +648,90 @@ li{
 /* #endregion footer*/
 
 /* #region Mediaqueries*/
+        /*Mediaqueries desktop*/
+@media screen and (min-width : 991px) and (max-width : 1500px){  
+.blocPage{
+    width: auto;
+    height: auto;
+}
+
+/* section recherches début*/
+.iconeR{
+    width: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* section recherches fin*/
+
+/* section hébergement début*/
+    /*  card hébergement marseille début*/
+.card{
+    height: auto;
+}
+    /* card hébergement marseillle fin*/
+
+    /* card pop début */
+.cardPop p{
+    margin-top: 0;
+}
+.cardPop .card-image{
+    width: 40%;
+}
+
+.cardPop .card-body{
+    width: 60%;
+    height: 100%;
+}
+
+.cardPop .card-title{
+    width: 70%;
+    height: 40%;
+}
+
+.cardPop .card-price{
+    width: 40%;
+    height: 30%;
+}
+    /* card pop fin */
+/* section hébergement fin */
+
+/* section activités début */
+.blocActivites{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vieuxPort{
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.fortIles{
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.calanques{
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.notreDameParc{
+    width: auto;
+}
+/* section activités fin */
+}
+
+
         /* Mediaqueries tablettes*/
-@media screen and (min-width : 768px) and (max-width : 992px){
+@media screen and (max-width : 992px){
+.blocPage{
+    width: auto;
+    height: auto;
+}
+
     /*Boite menu */
 .Menu{
     flex-direction: column;
@@ -688,6 +771,10 @@ li{
     /* Boite menu fin*/
     
     /* Boite Recherches début */
+
+.recherches{
+    flex-direction: column;
+}
 .gras{
     display: flex;
     justify-content: center;
@@ -700,29 +787,52 @@ li{
 
 .barre{
     width: 50%;
-    margin-left: 225px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 .iconeR{
+    width: 10%;
     padding-left: 10px;
     padding-right: 10px;
 }
     
 .Search{
-    width: 170px;
+    width: 60%;
+ }
+
+ .loupe{
+    width: 30%;
  }
     /* Boite Recherches fin*/
 
     /* Boite Filtres début */
 .Filtres{
-    margin-left: 100px;
+    width: 100%;
+}
+
+.Aligne{
+    width: 5%;
+    align-self: center;
+}
+
+.ligne{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fil{
+    margin: 1%;
 }
     /* Boite Filtres fin*/
 
 
     /*Boites hebergements début */
+
 .hebergements{
+    width: auto;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -730,7 +840,9 @@ li{
 
 .Populaires{
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    margin-left: 0;
 }
 
 .boite{
@@ -739,36 +851,87 @@ li{
 }
 
 .CardsP{
-    width: 60%;
+    width: 100%;
     margin: auto;
 
 }
+    /* card Pop début*/
+.cardPop{
+    width: auto;
+    height: 28%;
+}
+
+.cardPop a{
+    width: 100%;
+    height: 100%;
+}
+
+.cardPop .card-image{
+    width: 40%;
+    height: 150px;
+}
+
+.cardPop .card-body{
+    width: 60%;
+}
+
+.cardPop .card-title,{
+    width: auto;
+}
+    /* card pop fin */
 
 .Hebergements-ville{
     width: auto;
-    margin-left: 20px;
+    margin-left: 0;
     margin-right: 0;
 }
+
+.Cards{
+    padding-left: 30px;
+}
+
+    /* card hébergement début */
+.card{
+    height: auto;
+}
+    /* card hébergement fin*/
+
     /*Boites hebergements fin */
 
     /*Boite Activités début */
 .blocActivites{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center
 }
 
 .vieuxPort{
+    width: auto;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .fortIles{
+    width: auto;
     margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.calanques{
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
     /*Boite Activités fin */
 }
 
         /*Mediaqueries Smartphone*/
-@media screen and (max-device-width : 768px) {
+@media screen and (max-device-width :768px), (max-width : 768px){
+.blocPage{
+    width: auto;
+    height: auto;
+}
     /*Boite menu */
 .Menu{
     flex-direction: column;
@@ -918,6 +1081,7 @@ li{
 
 .Boutton-F{
     margin-left: 20px;
+    border-radius: 40px;
 }
 
 .fil-animaux{
@@ -984,6 +1148,7 @@ li{
     /* card pop début*/
 
 .cardPop{
+    width: auto;
     height: 300px;
     font-size: 30px;
 }
@@ -1002,20 +1167,21 @@ li{
 }
 
 .cardPop .card-body{
-    width: 500px;
+    width: 55%;
     height: auto;
     padding-left: 25px;
 }
 
 .cardPop .card-title{
-    width: 500px;
-    height: 100px;
+    width: auto;
+    height: 120px;
     font-size: 40px;
+    padding-top: 0;
 }
 
 .cardPop .card-price{
-    width: 500px;
-    height: 120px;
+    width: auto;
+    height: 100px;
     font-size: 40px;
 }
 
