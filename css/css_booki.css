@@ -271,7 +271,7 @@ section{
     margin-right: 20px;
 }
 
-.hebergements h1{
+.hebergements h2{
     font-size: 20px;
     font-weight: bold;
     padding-top: 25px;
@@ -497,7 +497,7 @@ section{
     height: 40%;
     margin-bottom: 40px;
 }
-#Activités h1{ 
+#Activités h2{ 
     font-size: 20px;
     font-weight: bold;
     padding-top: 25px;
@@ -651,7 +651,7 @@ li{
         /*Mediaqueries desktop*/
 @media screen and (min-width : 991px) and (max-width : 1500px){  
 .blocPage{
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -680,7 +680,7 @@ li{
 .card{
     height: auto;
 }
-    /* card hébergement marseillle fin*/
+    /* card hébergement marseille fin*/
 
     /* card pop début */
 .cardPop p{
@@ -709,37 +709,98 @@ li{
 
 /* section activités début */
 .blocActivites{
-    width: auto;
+    width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .vieuxPort{
-    width: auto;
+    width: 30%;
+    height: auto;
     margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .fortIles{
-    width: auto;
+    width: 25%;
+    height: auto;
     margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .calanques{
-    width: auto;
+    width: 30%;
+    height: auto;
     margin-bottom: 20px;
+    margin-right: 30px;
 }
 
 .notreDameParc{
-    width: auto;
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px;
 }
+
+
+/* card Activités début */
+.cardAct{
+    width: 100%;
+}
+
+#fort{
+    width: 100%;
+}
+
+#fort .card-image{
+    width: 100%;
+}
+
+#fort .card-body{
+    width: 100%;
+}
+
+#iles{
+    width: 100%;
+}
+
+#iles .card-image{
+    width: 100%;
+}
+
+#iles .card-body{
+    width: 100%;
+}
+
+#notreDame{
+    width: 100%;
+}
+
+#notreDame .card-image{
+    width: 100%;
+}
+
+#notreDame .card-body{
+    width: 100%;
+}
+
+#lonchamp{
+    width: 100%;
+}
+
+#lonchamp .card-image{
+    width: 100%;
+}
+
+#lonchamp .card-body{
+    width: 100%;
+}
+/* card Activités fin */
 /* section activités fin */
 }
 
         /* Mediaqueries tablettes*/
 @media screen and (max-width : 992px){
 .blocPage{
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -918,35 +979,101 @@ li{
 }
 
 .vieuxPort{
-    width: auto;
+    width: 45%;
     margin-bottom: 20px;
     margin-right: 20px;
 }
 
 .fortIles{
-    width: auto;
+    width: 45%;
     margin-bottom: 20px;
     margin-right: 20px;
 }
 
 .calanques{
-    width: auto;
+    width: 45%;
     margin-bottom: 20px;
     margin-right: 20px;
 }
+
+.notreDameParc{
+    width: 45%;
+    margin-bottom: 20px;
+    margin-right: 20px; 
+}
+
+/* card Activités début */
+.cardAct{
+    width: 100%;
+}
+
+#fort{
+    width: 100%;
+}
+
+#fort .card-image{
+    width: 100%;
+}
+
+#fort .card-body{
+    width: 100%;
+}
+
+#iles{
+    width: 100%;
+}
+
+#iles .card-image{
+    width: 100%;
+}
+
+#iles .card-body{
+    width: 100%;
+}
+
+#notreDame{
+    width: 100%;
+}
+
+#notreDame .card-image{
+    width: 100%;
+}
+
+#notreDame .card-body{
+    width: 100%;
+}
+
+#lonchamp{
+    width: 100%;
+}
+
+#lonchamp .card-image{
+    width: 100%;
+}
+
+#lonchamp .card-body{
+    width: 100%;
+}
+/* card Activités fin */
     /*Boite Activités fin */
 }
 
         /*Mediaqueries Smartphone*/
-@media screen and (max-device-width :768px), (max-width : 768px){
+@media screen and (max-width : 767px){
+header{
+    width: 100%;
+}
+
 .blocPage{
-    width: auto;
+    width: 100%;
     height: auto;
 }
-    /*Boite menu */
+
+    /*Boite menu début */
 .Menu{
+    width: auto;
     flex-direction: column;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .Menu img{
@@ -961,6 +1088,7 @@ li{
 
 .Menu nav{
     width: auto;
+    font-size: 40px;
 }
 
 .Menu ol{
@@ -1004,7 +1132,7 @@ li{
 }
 
 .barre{
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     margin-top: 35px;
@@ -1013,7 +1141,7 @@ li{
 }
 
 .iconeR{
-    width: 70px;
+    width: 15%;
     height: 70px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1021,7 +1149,7 @@ li{
 }
 
 .Search{
-     width: 800px;
+     width: 70%;
      height: 70px;
      padding-left: 30px;
 }
@@ -1031,7 +1159,7 @@ li{
 }
 
 .loupe2{
-    width : 70px;
+    width : 15%;
     display: flex;
     justify-content: center;
     background-color: #0065FC;
@@ -1045,7 +1173,7 @@ li{
 
     /* Boite Filtres début */
 .Filtres{
-    width: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
@@ -1063,7 +1191,7 @@ li{
 }
 
 .fil{
-    width: 350px;
+    width: 45%;
     height: 80px;
     margin: 10px;
     border-radius: 40px;
@@ -1071,23 +1199,25 @@ li{
 }
 
 .icones{
-    width: 80px;
+    width: 11%;
     height: 80px;
     border-radius: 40px;
 }
 
 .Boutton{
-    width: 280px;
+    width: 95%;
     height: 80px;
     margin-left: 50px;
+    border-radius: 40px;
 }
 
 .fil-fam{
-    width: 300px;
+    width: 40%;
+    margin-right: 7%;
 }
 
 .fil-coeur{
-    margin-right: 300px;
+    margin-right: 40%;
 }
 
 .Boutton-F{
@@ -1096,11 +1226,11 @@ li{
 }
 
 .fil-animaux{
-    width: 400px;
+    width: 60%;
 }
 
 .Boutton-A{
-    margin-left: 95px;
+    margin-left: 10%;
 }
 
     /* Boite Filtres fin*/
@@ -1127,6 +1257,8 @@ li{
 .fa-info{
     margin-top: 5px;
 }
+
+/* populaires début */
 .Populaires{
     width: 100%;
     margin-bottom: 20px;
@@ -1141,7 +1273,7 @@ li{
     padding-top: 25px;
 }
 
-.boite h1{
+.boite h2{
     padding: 0;
     font-size: 40px
 }
@@ -1154,13 +1286,15 @@ li{
 .CardsP{
     width: auto;
     margin: 20px;
+    padding: 0;
 }
 
+/* populaires fin */
     /* card pop début*/
 
 .cardPop{
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
     font-size: 30px;
 }
 
@@ -1173,7 +1307,7 @@ li{
     margin-top: 10px;
 }
 .cardPop .card-image{
-    width: 250px;
+    width: 40%;
     height: auto;
 }
 
@@ -1186,26 +1320,26 @@ li{
 .cardPop .card-title{
     width: auto;
     height: 120px;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 0;
 }
 
 .cardPop .card-price{
     width: auto;
     height: 100px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* card pop fin*/
 
-
+/* hébergement marseille début */
 .Hebergements-ville{
     width: 100%;
     margin-right: 0;
     background-color: white;
 }
 
-.Hebergements-ville h1{
+.Hebergements-ville h2{
     font-size: 40px;
     padding-left: 0;
 }
@@ -1226,16 +1360,17 @@ li{
 .link{
     font-size: 40px;
 }
+/* hebergements marseille fin */
     /* card hébergement début */
 .card{
-    width: auto;
-    height: 450px;
+    width: 100%;
+    height: auto;
     margin-bottom: 15px;
     box-shadow: 7px 7px 10px #F2F2F2;
  }
 
  .card a{
-    font-size: 40px;
+    font-size: 30px;
  }
 
  .card .card-image{
@@ -1246,7 +1381,7 @@ li{
     /*Boites hebergements fin */
 
     /*Boite Activités début */
-#Activités h1{
+#Activités h2{
     font-size: 40px;
 }
 
@@ -1255,13 +1390,13 @@ li{
 }
 
 .vieuxPort{
-    width: auto;
+    width: 100%;
     height: 300px;
     margin-bottom: 25px;
 }
 
 .fortIles{
-    width: auto;
+    width: 100%;
     height: 600px;
     margin-bottom: 25px;
     display: flex;
@@ -1269,7 +1404,7 @@ li{
 }
 
 .calanques{
-    width: auto;
+    width: 100%;
     height: 300px;
     margin-bottom: 25px;
 }
@@ -1288,7 +1423,7 @@ li{
 }
 
 .cardAct a{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .cardAct .card-image{
@@ -1355,15 +1490,18 @@ li{
 
     /*Boite footer début */
 footer{
+    width: 100%;
     flex-direction: column;
     font-size: 40px;
 }
 
 .Noshebergements{
+    width: 100%;
     margin-left: 3%;
 }
 
 .Assistance{
+    width: 100%;
     margin-left: 3%;
 }
     /*Boite footer fin */
