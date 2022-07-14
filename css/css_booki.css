@@ -1314,6 +1314,7 @@ header{
 }
 .cardPop .card-image{
     width: 40%;
+    height: 155px;
 }
 
 .cardPop .card-body{
