@@ -1,9 +1,3 @@
-        /* police de la page*/
-@font-face {
-    font-family: 'Raleway';
-    src: url('./Raleway/Raleway-VariableFont_wght.ttf');
-}
-
         /*général*/
 *{
     box-sizing: border-box;
@@ -149,81 +143,52 @@ ol{
     margin: 10px;
     display: flex;
     justify-content: flex-start;
+    gap: 10px;
 }
 
-.fil {
-    box-sizing: content-box;
-    display: block;
-    width: 200px;
+.fil { 
     height: 40px;
-    margin-right: 22px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     border: 2px #F2F2F2 solid;
     border-radius: 20px;
+    background-color: transparent;
 }
-.fil:hover{
+.fil:hover {
     background-color: #0065FC;
     color: white;
 }
 
-.fil-eco{
-    width: 150px;
+.fil:hover .Boutton {
+    background-color: #0065FC;
+    color: white;
 }
 
-.fil-fam{
-    width: 120px;
- }
-
-.fil-coeur{
-    width: 140px;
- }
-
 .Boutton{
-    display: block;
-    width: 200px;
     padding: 0;
     border: hidden;
     background-color: white;
     color: black;
     font-weight: bold;
-    border-radius: 20px;   
-}
-
-.Boutton:hover{
-    background-color: #0065FC;
-    color: white;
-}
-
-.Boutton-E{
-    margin-left: 20px;
-    padding-left: 3px;
-}
-
-.Boutton-F{
-    margin-left: 15px;
-    padding-left: 3px;
-}
-
-.Boutton-R{
-    margin-left: 20px;
-    padding-left: 8px;
+    border-radius: 20px; 
+    padding: 9px;
 }
 
 .Boutton-A{
-    margin-left: 20px;
+    width: 155px;
 }
-    
 .icones{
     display: block;
     display: flex;
     justify-content: center;
-    width: 35px;
+    width: 40px;
     height: 40px;
     background-color: #DEEBFF;
     border-radius: 25px;
-    position: absolute;
+    margin-left: -10px;
 }
+
     /* #endregion Section Recherches*/
     
 /* #region Section Hébergements */ 
@@ -699,12 +664,12 @@ li{
 }
 
 .cardPop .card-title{
-    width: 70%;
+    width: 100%;
     height: 40%;
 }
 
 .cardPop .card-price{
-    width: 40%;
+    width: 100%;
     height: 30%;
 }
     /* card pop fin */
@@ -801,7 +766,7 @@ li{
 }
 
         /* Mediaqueries tablettes*/
-@media screen and (max-width : 992px){
+@media screen and (min-width : 768px) and (max-width : 992px){
 .blocPage{
     width: 100%;
     height: auto;
@@ -889,13 +854,13 @@ li{
 .Aligne{
     width: 5%;
     align-self: center;
+    margin-right: 10px;
 }
 
 .ligne{
     width: 95%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 0;
 }
 
 .fil{
@@ -923,6 +888,12 @@ li{
 .boite{
     display: flex;
     justify-content: center;
+}
+
+.starPop{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 28px;
 }
 
 .CardsP{
@@ -961,6 +932,10 @@ li{
     margin-right: 0;
 }
 
+.Hebergements-ville h2{
+    text-align: center;
+}
+
 .Cards{
     padding-left: 30px;
 }
@@ -979,6 +954,10 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: center
+}
+
+.activites h2{
+    text-align: center;
 }
 
 .vieuxPort{
@@ -1068,12 +1047,13 @@ body{
 }
 header{
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .blocPage{
     width: 100%;
     height: auto;
-
 }
 
     /*Boite menu début */
@@ -1087,30 +1067,40 @@ header{
     height: 100px;
 }
 .Menu p{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .Menu nav{
-    width: auto;
-    font-size: 25px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .Menu ol{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 0;
     margin: 0;
 }
 
-.Menu li{
+.MenuLi{
     padding: 0;
+}
+.MenuLi--1{
+    width: 100%;
+    padding-right: 5%;
+}
+
+.MenuLi--2{
+    width: 100%;
+    padding-left: 5%;
+    text-align: end;
 }
 
 .Menu a{
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -1124,25 +1114,24 @@ header{
     
     /* Boite Recherches début */
 .recherches{
-    font-size: 40px;
     margin-top: 30px;
 }
 
 .recherches .gras{
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 125%;
 } 
 
 .recherches p{
-    display: inline;
-    margin-top: 3px;
-    font-size: 20px;
+    padding-top: 1%;
+    font-size: 100%;
     line-height: 1;
 }
 
 .barre{
     width: 100%;
+    height: 20%;
     display: flex;
     justify-content: flex-start;
     margin-top: 35px;
@@ -1152,17 +1141,18 @@ header{
 
 .iconeR{
     width: 15%;
-    height: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 15px;
+}
+
+.fa-location-dot{
+    font-size: 150%;
 }
 
 .Search{
      width: 70%;
-     height: 70px;
      padding-left: 10px;
-     font-size: 20px;
+     font-size: 100%;
 }
 
 .loupe{
@@ -1177,8 +1167,12 @@ header{
     color: white;
     display: flex;
     border: hidden;
-    padding-top: 12px;
+    padding-top: 8px;
     border-radius: 10px;
+}
+
+.fa-magnifying-glass{
+    font-size: 150%;
 }
     /* Boite Recherches fin*/
 
@@ -1188,7 +1182,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
-    font-size: 30px;
+    font-size: 120%;
 }
 
 .Aligne{
@@ -1202,13 +1196,9 @@ header{
     margin-left: 0;
 }
 
-.fil{
-    width: 185px;
-    height: 50px;
-    margin: 10px;
-    margin-left: 0;
-    border-radius: 40px;
-    font-size: 20px;
+.fil {
+    height: 54px;
+    border-radius: 35px;
 }
 
 .icones{
@@ -1220,9 +1210,10 @@ header{
 .Boutton{
     width: auto;
     height: 50px;
-    padding-left: 55px;
     margin: 0;
     border-radius: 40px;
+    font-size: 90%;
+    padding: 14px;
 }
 
 .fil-fam{
@@ -1242,7 +1233,10 @@ header{
     width: 250px;
 }
 
-
+.Boutton-A{
+    padding-right: 30px;
+    padding-left: 10px;
+}
     /* Boite Filtres fin*/
 
 
@@ -1255,14 +1249,13 @@ header{
 
 .infos{
     width: 100%;
-    font-size : 20px;
+    font-size : 100%;
 }
 
 .ic{
-    width: 40px;
+    width: 30px;
     height: 30px;
     border-radius: 20px;
-    margin : auto;
     margin-right: 7px;
 }
 
@@ -1286,11 +1279,14 @@ header{
 
 .boite h2{
     padding: 0;
-    font-size: 30px
+    font-size: 125%;
 }
 
 .boite .starPop{
-    padding-top: 10px;
+    font-size: 100%;
+    padding-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .CardsP{
@@ -1304,13 +1300,13 @@ header{
 
 .cardPop{
     width: 100%;
-    height: auto;
-    font-size: 30px;
+    height: 20%;
 }
 
 .cardPop a{
-    width: auto;
-    height: 280px;
+    width: 100%;
+    height: 40%;
+    font-size: 100%;
 }
 
 .cardPop p{
@@ -1318,27 +1314,30 @@ header{
 }
 .cardPop .card-image{
     width: 40%;
-    height: auto;
 }
 
 .cardPop .card-body{
     width: 55%;
-    height: auto;
+    height: 20%;
     padding-left: 25px;
 }
 
 .cardPop .card-title{
     width: auto;
-    height: 120px;
-    font-size: 23px;
+    height: 20%;
     padding-top: 0;
 }
 
 .cardPop .card-price{
     width: auto;
-    height: 100px;
-    font-size: 25px;
+    height: 30%;
 }
+
+.cardPop .card-stars{
+    width: 100%;
+    font-size: 100%;
+}
+
 
 /* card pop fin*/
 
@@ -1350,7 +1349,7 @@ header{
 }
 
 .Hebergements-ville h2{
-    font-size: 30px;
+    font-size: 125%;
     padding-left: 0;
 }
 
@@ -1369,24 +1368,19 @@ header{
 }
 
 .link{
-    font-size: 25px;
+    font-size: 120%;
     padding-left: 10px;
 }
 /* hebergements marseille fin */
     /* card hébergement début */
 .card{
     width: 100%;
-    height: auto;
     margin-bottom: 15px;
     box-shadow: 7px 7px 10px #F2F2F2;
  }
 
  .card a{
-    font-size: 30px;
- }
-
- .card .card-image{
-    height: 250px;
+    font-size: 120%;
  }
     /* card hébergement fin*/
 
@@ -1394,7 +1388,7 @@ header{
 
     /*Boite Activités début */
 #Activités h2{
-    font-size: 30px;
+    font-size: 125%;
 }
 
 .blocActivites{
@@ -1403,43 +1397,51 @@ header{
 
 .vieuxPort{
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-bottom: 25px;
 }
 
 .fortIles{
     width: 100%;
-    height: 600px;
-    margin-bottom: 25px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 25px;
 }
 
 .calanques{
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-bottom: 25px;
 }
 
 .notreDameParc{
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
 }
 
     /* cardAct début*/
 .cardAct{
-    width: auto;
-    height: 300px; 
+    width: 100%;
+    height: auto; 
 }
 
 .cardAct a{
-    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
 }
 
 .cardAct .card-image{
-    height: 200px;  
+    width: 100%;
+    height: 200px;
+}
+
+.cardAct .card-title{
+    width: 100%;
+    height: 20%;
 }
 
 .cardAct p{
@@ -1447,14 +1449,9 @@ header{
 }
 
 #fort{
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
     margin-bottom: 25px;
-}
-
-#fort .cardAct{
-    width: auto;
-    height: 200px;
 }
 
 #fort .card-image{
@@ -1462,9 +1459,14 @@ header{
     height: 200px;
 }
 
+#fort .card-body{
+    width: 100%;
+    height: 20%;
+}
+
 #iles{
-    width: auto;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 #iles .card-image{
@@ -1474,7 +1476,7 @@ header{
 
 #notreDame{
     width: 100%;
-    height: 300px; 
+    height: auto; 
     margin-bottom: 25px; 
 }
 
@@ -1485,12 +1487,12 @@ header{
 
 #lonchamp{
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 #lonchamp .cardAct{
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 #lonchamp .card-image{

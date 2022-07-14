@@ -6,6 +6,7 @@
 	<title> Booki Accueil </title>
     <link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/css_booki.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
     <script src="https://kit.fontawesome.com/7a914944f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,8 +15,8 @@
             <p><img src="images/Booki.png" alt="logo Booki bleu"/></p>
             <nav>
                 <ol>
-                    <li class="MenuLi"><a href="#hebergements">Hébergements</a></li>
-                    <li class="MenuLi"><a href="#activites">Activités</a></li>
+                    <li class="MenuLi MenuLi--1"><a href="#hebergements">Hébergements</a></li>
+                    <li class="MenuLi MenuLi--2"><a href="#activites">Activités</a></li>
                 </ol>
             </nav>
         </div> 
@@ -32,7 +33,7 @@
                         <div class="iconeR"><i class="fa-solid fa-location-dot"></i></div>
                         <input class="Search" type="search" placeholder value= "Marseille, France"/>
                         <input class ="loupe" type="submit" value="Rechercher"/>
-                        <button type ="submit" class="loupe2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="loupe2"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                     <!-- j'ai mis une div pour mon formulaire afin de pouvoir intégrer l'icone -->
                 </div>   
@@ -41,24 +42,24 @@
                 <!-- bloc filtre début -->
                 <div class="Filtres">
                     <p class="Aligne">Filtres</p> 
-                    <form class="ligne">
-                        <div class="fil fil-eco">
+                    <div class="ligne">
+                        <button class="fil fil-eco">
                             <div class="icones"><i class="fa fa-solid fa-money-bill-wave"></i></div>
-                            <input class="Boutton Boutton-E" type="button" value="Économique"/>
-                        </div>
-                        <div class="fil fil-fam">
+                            <p class="Boutton Boutton-E">Economique</p>
+                        </button>
+                        <button class="fil fil-fam">
                             <div class="icones"><i class=" fa fa-solid fa-child-reaching"></i></div>
-                            <input class="Boutton Boutton-F" type="button" value="Familial"/>
-                        </div>
-                        <div class="fil fil-coeur">
+                            <p class="Boutton Boutton-F">Familial</p>
+                        </button>
+                        <button class="fil fil-coeur">
                             <div class="icones"><i class="fa fa-solid fa-heart"></i></div>
-                            <input class="Boutton Boutton-R" type="button" value="Romantique"/>
-                        </div>
-                        <div class="fil fil-animaux">
+                            <p class="Boutton Boutton-R">Romantique</p>
+                        </button>
+                        <button class="fil fil-animaux">
                             <div class="icones"><i class="fa fa-solid fa-dog"></i></div>
-                            <input class="Boutton Boutton-A" type="button" value="Animaux autorisés"/>
-                        </div>
-                    </form>
+                            <p class="Boutton Boutton-A">Animaux autorisés</p>
+                        </button>
+                    </div>
                 </div> 
             <!-- bloc filtre fin --> 
             </section>
